@@ -12,7 +12,7 @@ function preload()
 	starImg = loadImage("images/star.png");
 	bgImg = loadImage("images/starNight.png");
 	fairyImage = loadAnimation("images/fairyImage1.png","images/fairyImage2.png");
-	fairySound = loadSound("Sound/JoyMusic.mp3")
+	fairySound = loadSound("sound/JoyMusic.mp3")
 }
 
 function setup() {
@@ -43,7 +43,7 @@ function draw() {
   star.x= starBody.position.x 
   star.y= starBody.position.y 
 
-  console.log(star.y);
+  //console.log(star.y);
 
   if(star.y > 470 && starBody.position.y > 470 ){
 	  Matter.Body.setStatic(starBody,true);
